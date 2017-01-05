@@ -1,6 +1,7 @@
 /*
 1. Start with the number 42 and set that equal to `majorKey`
 
+
 2. Create condition logic to check if the `majorKey` is great or equal to 53
 2-1. If true, add 42 to `majorKey`
 2-2. If false, subtract 13 from `majorKey`
@@ -33,3 +34,63 @@ is more than one character in the string. Return `val` and set the `majorKey` to
 
 14. Your answer should be a string value that equals 7. Is that what you got?
 */
+
+var majorKey = 42;
+
+if (majorKey >= 53) {
+  majorKey += 42;
+}
+else {
+  majorKey -= 13;
+};
+
+majorKey = majorKey + "11";
+
+arr = [];
+
+for (i = 0; i < majorKey.length; i++) {
+  arr.push(majorKey.charAt(i));
+
+};
+
+arr.shift();
+arr.pop();
+var minorKey = ""
+
+/* arr = ["9","1"] */
+for (i = 2; i > 0; i--) {
+  minorKey += arr[i-1];
+};
+
+majorKey = parseInt(majorKey);
+minorKey = parseInt(minorKey);
+
+majorKey += minorKey;
+
+if(majorKey < 60) {
+  majorKey = 14;
+} else if
+  (majorKey == 2930) {
+    majorKey = 27;
+  } else
+  {majorKey = 2};
+
+  var i = 10;
+
+  while(i > 0) {
+  majorKey += 1;
+  i--;
+  }
+
+  function upsilon(val) {
+    val = val.toString();
+    if(val.length > 1) {
+      val = val.substring(1,2);
+    }
+    return val;
+    majorKey = val;
+  };
+
+  upsilon(majorKey);
+
+  console.log(upsilon(majorKey));
